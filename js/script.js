@@ -327,3 +327,6 @@ document.addEventListener('keydown', (event) => {
     event.stopPropagation();
   }
 });
+
+// trước đây có thể là: document.body.appendChild(renderer.domElement);
+document.getElementById("three-container").appendChild(renderer.domElement);
