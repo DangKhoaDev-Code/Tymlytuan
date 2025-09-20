@@ -18,16 +18,20 @@
           right: 15px;
           font-family: Arial, sans-serif;
           font-size: 16px;
-          color: #ff66cc;       /* hồng để nổi bật */
+          color: #ffffff;       /* trắng */
           font-weight: bold;
-          z-index: 9999;        /* luôn ở trên */
+          z-index: 999999;      /* luôn nổi trên cùng */
           text-decoration: none;
-          transition: color 0.3s ease, text-shadow 0.3s ease;
+          text-shadow: 0 0 5px #ffffff,
+                       0 0 10px #ffffff,
+                       0 0 20px #ffffff; /* phát sáng */
+          transition: text-shadow 0.3s ease;
         }
 
         .watermark:hover {
-          color: #ffffff;
-          text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc;
+          text-shadow: 0 0 10px #ffffff,
+                       0 0 20px #ffffff,
+                       0 0 30px #ffffff;
         }
     </style>
   </head>
