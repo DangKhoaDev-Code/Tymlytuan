@@ -10,9 +10,31 @@
         html{
             transform: scale(1.7);
         }
+
+        /* watermark góc dưới bên phải */
+        .watermark {
+          position: fixed;
+          bottom: 10px;
+          right: 15px;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          color: #ffffff;
+          opacity: 0.8;
+          text-decoration: none;
+          transition: color 0.3s ease, opacity 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .watermark:hover {
+          color: #ff66cc;
+          opacity: 1;
+          text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc;
+        }
     </style>
   </head>
   <body>
+    <!-- watermark góc phải dưới -->
+    <a class="watermark" href="https://www.tiktok.com/@dangkhoacoder" target="_blank">@dangkhoa_coder</a>
+
     <script src="js/three.min.js"></script>
     <script src="js/MeshSurfaceSampler.js"></script>
     <script src="js/TrackballControls.js"></script>
